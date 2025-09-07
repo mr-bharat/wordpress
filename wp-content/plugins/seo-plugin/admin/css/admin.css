@@ -1,0 +1,251 @@
+/* News SEO Plugin Admin Styles */
+
+.news-seo-meta-box .form-table th {
+    width: 200px;
+    padding: 15px 0;
+}
+
+.news-seo-meta-box .form-table td {
+    padding: 15px 0;
+}
+
+.character-count {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.character-count.over-limit {
+    color: #d63638;
+    font-weight: bold;
+}
+
+.character-count.near-limit {
+    color: #dba617;
+    font-weight: bold;
+}
+
+/* SEO Preview Styles */
+#seo-preview {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+#seo-preview h4 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.google-preview {
+    background: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+}
+
+.google-title {
+    color: #1a0dab;
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.google-title:hover {
+    text-decoration: none;
+}
+
+.google-url {
+    color: #006621;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.google-description {
+    color: #545454;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.social-preview {
+    background: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    max-width: 500px;
+}
+
+.social-title {
+    color: #1d2129;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 5px;
+}
+
+.social-description {
+    color: #606770;
+    font-size: 14px;
+    line-height: 1.3;
+    margin-bottom: 8px;
+}
+
+.social-url {
+    color: #606770;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+/* Admin page specific styles */
+.news-seo-settings .form-table th {
+    width: 200px;
+}
+
+.news-seo-settings .form-table td {
+    vertical-align: top;
+}
+
+.news-seo-settings .description {
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.news-seo-settings code {
+    background: #f1f1f1;
+    padding: 2px 4px;
+    border-radius: 2px;
+    font-family: Monaco, Consolas, monospace;
+}
+
+/* Button styles */
+.news-seo-button {
+    display: inline-block;
+    padding: 8px 15px;
+    background: #0073aa;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.news-seo-button:hover {
+    background: #005a87;
+    color: #fff;
+    text-decoration: none;
+}
+
+.news-seo-button.secondary {
+    background: #f1f1f1;
+    color: #333;
+}
+
+.news-seo-button.secondary:hover {
+    background: #e1e1e1;
+    color: #333;
+}
+
+/* Meta box toggle */
+.news-seo-toggle {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.news-seo-toggle h4 {
+    margin: 0 0 10px 0;
+    cursor: pointer;
+}
+
+.news-seo-toggle .toggle-indicator {
+    float: right;
+    font-weight: normal;
+}
+
+.news-seo-section {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.news-seo-section:last-child {
+    border-bottom: none;
+}
+
+/* Responsive styles */
+@media (max-width: 782px) {
+    .news-seo-meta-box .form-table th,
+    .news-seo-settings .form-table th {
+        width: auto;
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .news-seo-meta-box .form-table td,
+    .news-seo-settings .form-table td {
+        display: block;
+        padding-left: 0;
+    }
+    
+    .google-preview,
+    .social-preview {
+        max-width: 100%;
+    }
+}
+
+/* Accessibility improvements */
+.news-seo-meta-box label,
+.news-seo-settings label {
+    cursor: pointer;
+}
+
+.news-seo-meta-box input:focus,
+.news-seo-meta-box textarea:focus,
+.news-seo-settings input:focus,
+.news-seo-settings textarea:focus {
+    box-shadow: 0 0 0 1px #5b9dd9;
+    border-color: #5b9dd9;
+    outline: none;
+}
+
+/* Status indicators */
+.status-good {
+    color: #46b450;
+}
+
+.status-warning {
+    color: #ffb900;
+}
+
+.status-error {
+    color: #dc3232;
+}
+
+.status-indicator {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.status-indicator.good {
+    background-color: #46b450;
+}
+
+.status-indicator.warning {
+    background-color: #ffb900;
+}
+
+.status-indicator.error {
+    background-color: #dc3232;
+}

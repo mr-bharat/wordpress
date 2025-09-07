@@ -1,0 +1,63 @@
+.error-404 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 60rem;
+    margin: 20rem auto;
+}
+
+.error-404 .notfound-404 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 60rem;
+    height: 150px;
+    z-index: -1;
+}
+
+.error-404 .notfound-404 h1 {
+    font-family: var(--theme-site-title-font-family);
+    font-size: 28rem;
+    font-weight: 400;
+    color: #e3e3e3;
+    letter-spacing: 7px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    width: 100%;
+}
+
+.error-404 h2 {
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.error-404 .notfound-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.error-404 .notfound-link .svg-icon {
+    display: inline-block;
+    padding: 3px;
+    transform: scaleX(-1);
+}
+
+/* Mobile styling */
+@media only screen and (max-width: 767px) {
+    .error-404 .notfound-404 {
+        position: relative;
+        width: 100%;
+        max-width: none;
+    }
+
+    .error-404 .notfound-404 h1 {
+        font-size: 14rem;
+    }
+}

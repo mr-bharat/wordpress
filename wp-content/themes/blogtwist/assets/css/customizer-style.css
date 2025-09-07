@@ -1,0 +1,181 @@
+.customize-control input[type=email],
+.customize-control input[type=number],
+.customize-control input[type=password],
+.customize-control input[type=search],
+.customize-control input[type=tel],
+.customize-control input[type=text],
+.customize-control input[type=url],
+.customize-control select {
+    border: 2px solid #b8daeb;
+    border-radius: 4px;
+    min-height: 45px;
+    -webkit-appearance: none;
+}
+
+.wp-core-ui .customize-control-content .button,
+.wp-core-ui .customize-control-content .button-secondary {
+    border: 2px solid #b8daeb;
+    border-radius: 4px;
+    -webkit-appearance: none;
+}
+
+.customize-control-checkbox input[type=checkbox] {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 40px;
+    height: 14px;
+    border-radius: 8px;
+    background: #ccc;
+    vertical-align: middle;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    transition: background 350ms ease;
+}
+
+.customize-control-checkbox input[type=checkbox]:before,
+.customize-control-checkbox input[type=checkbox]:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: -3px;
+    transition: all 350ms cubic-bezier(0, 0.95, 0.38, 0.98), background 150ms ease;
+}
+
+.customize-control-checkbox input[type=checkbox]:before {
+    background: rgba(0, 0, 0, 0.2);
+    transform: translate3d(0, -50%, 0) scale(0);
+}
+
+.customize-control-checkbox input[type=checkbox]:after {
+    background: #999;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transform: translate3d(0, -50%, 0);
+}
+
+.customize-control-checkbox input[type=checkbox]:checked:before {
+    background: transparent;
+    font-size: 0;
+    line-height: 1px;
+    transform: translate3d(100%, -50%, 0) scale(1);
+}
+
+.customize-control-checkbox input[type=checkbox]:checked:after {
+    background: #73c5ee;
+    border-color: #73c5ee;
+    transform: translate3d(100%, -50%, 0);
+}
+
+.customize-control-radio-image img {
+    vertical-align: top
+}
+
+.customize-control-radio-image .radio-image-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px
+}
+
+.customize-control-radio-image .radio-image-wrapper > * {
+    padding: 5px
+}
+
+.customize-control-radio-image .radio-image-wrapper input[type="radio"] {
+    display: none
+}
+
+.customize-control-radio-image input[type="radio"] + label:hover {
+    opacity: .7
+}
+
+.customize-control-radio-image input[type="radio"]:checked + label {
+    border: 2px solid #000000
+}
+#customize-theme-controls #accordion-section-theme_upsell .accordion-section-title{
+    border-left-color: #00b09b;
+}
+#customize-theme-controls #accordion-section-theme_upsell .accordion-section-title .accordion-trigger {
+    background: #00b09b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #96c93d, #00b09b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #96c93d, #00b09b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+#customize-outer-theme-controls #accordion-section-theme_upsell .accordion-section-title:after,
+#customize-theme-controls #accordion-section-theme_upsell .accordion-section-title:after{
+    color: #fff;
+}
+#customize-theme-controls #accordion-section-theme_upsell .accordion-section-title .accordion-trigger:before {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: 2;
+    display: block;
+    content: "";
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    transform: skewX(-25deg);
+}
+
+#customize-theme-controls #accordion-section-theme_upsell:hover .accordion-section-title .accordion-trigger:before,
+#customize-theme-controls #accordion-section-theme_upsell:focus .accordion-section-title .accordion-trigger:before {
+    animation: hovershine 0.85s;
+}
+
+@keyframes hovershine {
+    100% {
+        left: 100%;
+    }
+}
+
+#accordion-section-theme_upsell .accordion-section-title .accordion-trigger:after,
+#accordion-section-theme_upsell .accordion-section-title .accordion-trigger:after {
+    color: #fff !important;
+}
+
+.customize-control-upsell .button.upgrade-now {
+    background: #65bc7b;
+    border: #65bc7b;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.customize-control-upsell .button.upgrade-now:hover,
+.customize-control-upsell .button.upgrade-now:focus {
+    background: #4CAF50;
+    border: #4CAF50;
+    color: #fff;
+}
+
+.control-section-section-features-list {
+    padding: 30px 15px;
+    background-color: #fcfcfc;
+    display: block !important;
+}
+
+.theme-features {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.theme-features .dashicons {
+    color: #65bc7b;
+    margin-right: 5px;
+}
+
+.customize-control-upsell .button {
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+}

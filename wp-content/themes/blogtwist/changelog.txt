@@ -1,0 +1,12 @@
+== 1.0.3 : 2025-09-03 ==
+-Tweak: Removed StumbleUpon icon
+-Tweak: Improved CSS
+
+== 1.0.2 : 2025-05-02 ==
+-Fix: Corrected display issue with menu descriptions
+
+== 1.0.1 : 2025-03-10 ==
+-Fix: Resolved an issue where the admin notice could not be dismissed.
+
+== 1.0.0 : 2025-02-17 ==
+-New: Initial Version

@@ -1,0 +1,130 @@
+#wpmotif-metabox-panel .inside {
+    margin: 0;
+    padding: 0;
+}
+
+#blogtwist-settings-metabox-container, .wpmotif-meta-card {
+    display: grid;
+}
+
+.wpmotif-input-radio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.wpmotif-input-radio input[type=radio] + label {
+    border: 2px solid transparent;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.wpmotif-input-radio img {
+    max-width: 40px;
+    vertical-align: top;
+}
+
+.wpmotif-input-radio input[type=radio], .wpmotif-meta-details {
+    display: none
+}
+
+.wpmotif-input-radio input[type=radio] + label:hover {
+    opacity: .7
+}
+
+.wpmotif-input-radio input[type=radio]:checked + label {
+    border-color: #00BCD4;
+}
+
+.wpmotif-meta-card {
+    align-items: center;
+    border-bottom: 1px solid #ede0e0;
+    gap: 10px;
+    padding: 20px;
+}
+
+.wpmotif-meta-card h4 {
+    margin: 0
+}
+
+.wpmotif-meta-card select {
+    min-width: 30%;
+    width: auto
+}
+
+.wpmotif-meta-wrapper {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #ddd;
+}
+
+.wpmotif-meta-header {
+    background-color: rgba(0, 0, 0, 0.025);
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 576px) {
+    .wpmotif-meta-wrapper {
+        flex-direction: row;
+        min-height: 30rem;
+    }
+
+    .wpmotif-meta-header {
+        flex-direction: column;
+        flex-basis: 20%;
+    }
+
+    .wpmotif-meta-content {
+        flex-basis: 80%
+    }
+}
+
+.wpmotif-meta-header:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.wpmotif-meta-label {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: block;
+    padding: 15px 30px;
+    text-decoration: none;
+}
+
+.wpmotif-meta-label.is-active {
+    background: #4c2df0;
+}
+
+.wpmotif-meta-label.is-active h3 {
+    color: #fff
+}
+
+.wpmotif-meta-label:not(.is-active):hover {
+    color: #65bc7b;
+    background-color: #65bc7b10
+}
+
+.wpmotif-meta-label h3 {
+    font-size: 13px;
+    margin: 0
+}
+
+.wpmotif-meta-content {
+    flex-grow: 1
+}
+
+.wpmotif-meta-details.is-active {
+    display: block
+}
+
+.wpmotif-meta-info {
+    padding: 0 22px;
+}
