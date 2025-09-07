@@ -552,7 +552,7 @@ function get_post_class( $css_class = '', $post = null ) {
 	}
 
 	// hentry for hAtom compliance.
-	$classes[] = 'hentry';
+	$classes[] = '';
 
 	// All public taxonomies.
 	$taxonomies = get_taxonomies( array( 'public' => true ) );
